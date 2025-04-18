@@ -32,7 +32,6 @@
 }
 .nav-link {
   padding: 10px 18px;
-  /* gap: 10px; */
   margin: 10px;
   text-decoration: none;
   color: white !important;
@@ -44,15 +43,7 @@
 }
 /* Header Css End  */
 
-.nav :where(#close-icon,#menu-icon){
-  font-size: large;
-  color: white; 
-}
-.nav #close-icon {
-  position: absolute;
-  margin-right: auto;
-  /* top: 30px; */
-}
+
 /* Main Css Start */
 
 .main-hero-section {
@@ -60,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: auto;
+  padding: 5vh;
 }
 
 .main-tital {
@@ -75,7 +66,8 @@
   color: white;
 }
 .hero-section-img {
-  height: 500px;
+  height: 400px;
+  margin-top: 2vh;
 }
 .button-div {
   margin-top: 3vh;
@@ -100,7 +92,6 @@
 .About-Us-Section{
   width: 100%;
   padding: 5%;
-  /* height: 60vh; */
   margin-top: 7vh;
 }
 .About-Us-img {
@@ -131,11 +122,11 @@
 }
 .About-Us-Icon {
   text-decoration: none;
-  /* font-size: 3vh; */
   padding: 1vh;
   color: black;
 }
 /* About-Us Css End  */
+
 /* Menu Css Start */
 .Menu-Section {
   background-color: #252525;
@@ -161,8 +152,7 @@
   text-align: center;
   color: white;
   margin-top: 5%;
-  width: 20%;
-  /* height: 50vh; */
+  width: 20
 }
 .Menu-Imges {
   height: 200px;
@@ -170,6 +160,7 @@
 }
 
 /* Menu Css End */
+
 /* Testiomonials Css Start  */
 .Testiomonials-hr {
   border: 3px solid #f3961c;
@@ -188,7 +179,6 @@
 .Testiomonials-Section {
   background-color: #faf4f4;
   padding: 2vh;
-  /* text-align: center; */
 }
 .Testiomonials-Card-Imges {
   height: 200px;
@@ -224,7 +214,6 @@
 .Gallery-Imges-div {
   display: flex;
   justify-content: center;
-  /* margin-top: 5vh; */
 }
 .Gallery-Imges {
   height: 300px;
@@ -283,6 +272,7 @@
   margin: 5px;
 }
 /* Contact Us End */
+
 /* Foote Css Start  */
 .footer-div {
   display: flex;
@@ -307,12 +297,12 @@
 /* Footer Css End */
 
 /* Responsive Css  Start*/
-
+/* 600px Css Start  */
 @media screen and (max-width:600px) {
   .main-hero-section{
     flex-direction: column;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
   .hero-section-img{
     height: 350px;
@@ -366,8 +356,9 @@
     
   }
 }
-
-@media screen and (max-width:7px) {
+/* 600px Css End  */
+/* 700px Css End  */
+/* @media screen and (max-width:700px) {
   .main-hero-section{
     flex-direction: column;
     text-align: center;
@@ -428,15 +419,16 @@
     
   }
 }
-
+ */
 @media screen and (max-width:1200px) {
   .main-hero-section{
     flex-direction: column;
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
   }
   .hero-section-img{
     height: 350px;
+
   }
   .About-Us-div{
     flex-direction: column;
