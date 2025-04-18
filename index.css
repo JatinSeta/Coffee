@@ -7,17 +7,22 @@
 /* Header Css Start */
 .header {
   background-color: #3b141c;
-  /* padding: 10px 5px; */
   position: fixed;
   width: 100%;
   z-index: 5;
 }
+.navbar{
+  
+  background-color: #3b141c;
+}
 .nav {
-  justify-content: space-between;
   display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 .nav-logo {
   color: white;
+  margin-top: 1%;
   text-decoration: none;
 }
 .nav-ul-item {
@@ -39,6 +44,15 @@
 }
 /* Header Css End  */
 
+.nav :where(#close-icon,#menu-icon){
+  font-size: large;
+  color: white; 
+}
+.nav #close-icon {
+  position: absolute;
+  margin-right: auto;
+  /* top: 30px; */
+}
 /* Main Css Start */
 
 .main-hero-section {
@@ -46,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
+  height: auto;
 }
 
 .main-tital {
@@ -83,9 +97,10 @@
   border-radius: 30px;
 }
 /* About-US Css Start */
-.About-Us {
+.About-Us-Section{
   width: 100%;
-  height: 60vh;
+  padding: 5%;
+  /* height: 60vh; */
   margin-top: 7vh;
 }
 .About-Us-img {
@@ -116,7 +131,7 @@
 }
 .About-Us-Icon {
   text-decoration: none;
-  font-size: 3vh;
+  /* font-size: 3vh; */
   padding: 1vh;
   color: black;
 }
@@ -173,6 +188,7 @@
 .Testiomonials-Section {
   background-color: #faf4f4;
   padding: 2vh;
+  /* text-align: center; */
 }
 .Testiomonials-Card-Imges {
   height: 200px;
@@ -180,7 +196,7 @@
 }
 .Testiomonials-Card {
   text-align: center;
-  width: 20%;
+  width: 50%;
   padding: 20px;
 }
 .carousel-slider-button {
@@ -202,12 +218,13 @@
   border-radius: 10px;
 }
 .Gallery-main-div {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 .Gallery-Imges-div {
-  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5vh; */
 }
 .Gallery-Imges {
   height: 300px;
@@ -219,8 +236,6 @@
   transform: scale(1.2);
   transition: 1s;
 }
-/* Gallery Css End */
-/* Contact Us Start */
 .Contact-Us-Section {
   background-color: #faf4f4;
   padding: 2%;
@@ -246,7 +261,7 @@
 .Contact-right-div {
   display: flex;
   flex-direction: column;
-
+  
   width: 40%;
 }
 .Contact-Us-input-filed {
@@ -290,3 +305,184 @@
   text-decoration: none;
 }
 /* Footer Css End */
+
+/* Responsive Css  Start*/
+
+@media screen and (max-width:600px) {
+  .main-hero-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section-img{
+    height: 350px;
+  }
+  .About-Us-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Menu-Main-Div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .Menu-div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .Menu-Imges {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-card-div{
+    flex-direction:column;
+    align-items: center;
+  }
+  .Testiomonials-Card{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Gallery-Imges-div{
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+  }
+  .Gallery-Imges{
+    height: 200px;
+    width: 400px;
+  }
+  .Contact-main-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Contact-left-div{
+    justify-content: space-evenly;
+    
+  }
+  .footer-div{
+    flex-direction: column;
+    
+  }
+}
+
+@media screen and (max-width:7px) {
+  .main-hero-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section-img{
+    height: 350px;
+  }
+  .About-Us-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Menu-Main-Div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .Menu-div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .Menu-Imges {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-card-div{
+    flex-direction:column;
+    align-items: center;
+  }
+  .Testiomonials-Card{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Gallery-Imges-div{
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+  }
+  .Gallery-Imges{
+    height: 200px;
+    width: 300px;
+    padding: 2vh;
+  }
+  .Contact-main-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Contact-left-div{
+    justify-content: space-evenly;
+    
+  }
+  .Contact-right-div{
+    width: 100%;
+  }
+  .footer-div{
+    flex-direction: column;
+    
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .main-hero-section{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2vh;
+  }
+  .hero-section-img{
+    height: 350px;
+  }
+  .About-Us-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Menu-Main-Div{
+    align-items: center;
+  }
+  .Menu-div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .Menu-Imges {
+    width: 250px;
+    height: 250px;
+  }
+  .carousel-card-div{
+    flex-direction:column;
+    align-items: center;
+  }
+  .Testiomonials-Card{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Gallery-Imges-div{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+  .Gallery-Imges{
+    height: 200px;
+    width: 250px;
+  }
+  .Contact-main-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Contact-left-div{
+    justify-content: space-evenly;
+    
+  }
+  .Contact-right-div{
+    width: 100%;
+  }
+
+}
+
+/* Responsive Css  Start*/
